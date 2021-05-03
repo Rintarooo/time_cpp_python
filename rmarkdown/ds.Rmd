@@ -1,0 +1,82 @@
+# Fibonacci sequence
+## Check Data 
+Load data from generated csv files.
+```{r load data}
+data1 <- read.csv("../fibo/py.csv")
+data2 <- read.csv("../fibo/cpp.csv")
+```
+Create variables
+```{r create variables}
+# raw csv file contains values of execution time in seconds unit, so
+# change seconds into milliseconds by multiplying 1000
+pytime <- 1000*data1$execution.time
+cpptime <- 1000*data2$execution.time
+print(c(mean(pytime), mean(cpptime)))
+```
+
+## Confidence Interval
+The variance of the population is unknown.
+```{r ci}
+# Create a function to calculate confidence intervals.
+ci_bounds <- function(x,alpha) {
+  low <- mean(x) + qt(alpha/2, length(x)-1)*(sd(x)/sqrt(length(x))) 
+  hi <- mean(x) + qt(1 - alpha/2, length(x)-1)*(sd(x)/sqrt(length(x)))
+  return(c(low,hi))
+}
+
+# plot confidence intervals for execution time of program
+plot(pytime, ylim = c(0,4000), xlim = c(0,30), xlab = "Number of Execution", ylab = "Execution Time(ms)", col="red")
+par(new = TRUE)
+plot(cpptime, ylim = c(0,4000), xlim = c(0,30), xlab = "Number of Execution", ylab = "Execution Time(ms)", col="blue")
+title("C++ vs Python in Fibonacci sequence")
+
+vec1 <- ci_bounds(pytime, 0.01)
+abline(h = mean(pytime), col="red")
+abline(h = vec1[1], lty=2, col="red")
+abline(h = vec1[2], lty=2, col="red")
+
+vec2 <- ci_bounds(cpptime, 0.01)
+abline(h = mean(cpptime), col="blue")
+abline(h = vec2[1], lty=2, col="blue")
+abline(h = vec2[2], lty=2, col="blue")
+
+legend("topleft", legend = c("C++", "Python"), col = c("red", "blue"), pch = 1)
+```
+
+# Support Vector Machine(SVM) with OpenCV
+## Check Data 
+Load data from generated csv files.
+```{r SVM load data}
+data1 <- read.csv("../svm/py.csv")
+data2 <- read.csv("../svm/cpp.csv")
+```
+Create variables
+```{r SVM create variables}
+# raw csv file contains values of execution time in seconds unit, so
+# change seconds into milliseconds by multiplying 1000
+pytime <- 1000*data1$execution.time
+cpptime <- 1000*data2$execution.time
+print(c(mean(pytime), mean(cpptime)))
+```
+
+## Confidence Interval
+The variance of the population is unknown.
+```{r SVM ci}
+
+# plot confidence intervals for execution time of program
+plot(pytime, ylim = c(0,10000), xlim = c(0,30), xlab = "Number of Execution", ylab = "Execution Time(ms)", col="red")
+par(new = TRUE)
+plot(cpptime, ylim = c(0,10000), xlim = c(0,30), xlab = "Number of Execution", ylab = "Execution Time(ms)", col="blue")
+title("C++ vs Python in SVM")
+
+vec1 <- ci_bounds(pytime, 0.01)
+abline(h = mean(pytime), col="red")
+abline(h = vec1[1], lty=2, col="red")
+abline(h = vec1[2], lty=2, col="red")
+
+vec2 <- ci_bounds(cpptime, 0.01)
+abline(h = mean(cpptime), col="blue")
+abline(h = vec2[1], lty=2, col="blue")
+abline(h = vec2[2], lty=2, col="blue")
+legend("topleft", legend = c("C++", "Python"), col = c("red", "blue"), pch = 1)
+```
