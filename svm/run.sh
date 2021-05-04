@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# real = user + sys + I/O 待ち時間
-# http://x68000.q-e-d.net/~68user/unix/pickup?time
-
 if [ -f tmp.txt ]; then
 	rm tmp.txt
 	echo "rm tmp.txt"

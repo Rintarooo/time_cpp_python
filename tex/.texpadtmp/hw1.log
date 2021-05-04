@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2021.4.19)  3 MAY 2021 23:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=latex 2021.4.19)  4 MAY 2021 09:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -196,66 +196,87 @@ LaTeX Info: Redefining \nameref on input line 23.
 \openout3 = `hw1.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 29.
+(Font)              <17.28> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 29.
+(Font)              <12> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 29.
+(Font)              <8> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 29.
+(Font)              <6> on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 34.
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 40--41
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--58
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 64.
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
 [2]
 File: result.png Graphic file (type bmp)
 <result.png>
- [3] [4] (/Users/satourintarou/Documents/AIST/Course/ExperimentDesignInCS/homework/hw1/submit2nd/tex/.texpadtmp/hw1.aux)
-Package rerunfilecheck Info: File `hw1.out' has not changed.
-(rerunfilecheck)             Checksum: 2724BC9746464AD8773B19B9C6C7801C;1857.
+ [3]
+File: 00002d.png Graphic file (type bmp)
+<00002d.png>
+
+Overfull \hbox (209.05511pt too wide) in paragraph at lines 100--101
+ [][] 
+ []
+
+File: 000017.png Graphic file (type bmp)
+<000017.png>
+
+Overfull \hbox (209.05511pt too wide) in paragraph at lines 106--107
+ [][] 
+ []
+
+[4] [5] [6] (/Users/satourintarou/Documents/AIST/Course/ExperimentDesignInCS/homework/hw1/submit2nd/tex/.texpadtmp/hw1.aux)
+
+Package rerunfilecheck Warning: File `hw1.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `hw1.out':
+(rerunfilecheck)             Before: 42205C8945FA113123581497D5F6F966;2234
+(rerunfilecheck)             After:  2724BC9746464AD8773B19B9C6C7801C;1857.
  ) 
 Here is how much of TeX's memory you used:
- 7314 strings out of 478995
- 110266 string characters out of 5858210
- 411559 words of memory out of 5000000
- 24737 multiletter control sequences out of 15000+600000
- 409216 words of font info for 46 fonts, out of 8000000 for 9000
+ 7330 strings out of 478995
+ 110506 string characters out of 5858210
+ 411962 words of memory out of 5000000
+ 24747 multiletter control sequences out of 15000+600000
+ 409730 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,6n,77p,835b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,6n,77p,852b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/satourintarou/Documents/AIST/Course/ExperimentDesignInCS/homework/hw1/submit2nd/tex/.texpadtmp/hw1.dvi (4 pages, 11816 bytes).
+Output written on /Users/satourintarou/Documents/AIST/Course/ExperimentDesignInCS/homework/hw1/submit2nd/tex/.texpadtmp/hw1.dvi (6 pages, 14020 bytes).
