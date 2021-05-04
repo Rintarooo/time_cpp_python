@@ -5,29 +5,28 @@
 \usepackage[dvipdfmx]{hyperref}
 %for inserting figure
 \usepackage[dvipdfmx]{graphicx}
+%https://www.meganii.com/blog/2010/01/14/1263458561/
+\setlength\intextsep{0pt}
+\setlength\textfloatsep{0pt}
+\setlength\floatsep{0pt}
+\setlength\abovecaptionskip{0pt}
 
-\title{Experimental Design in Computer Science \\ \href{https://manaba.tsukuba.ac.jp/ct/course_1910418_report_1960312}{\underline{week1 report}}}
+\title{Experimental Design in Computer  Science \\ \href{https://manaba.tsukuba.ac.jp/ct/course_1910418_report_1960312}{\underline{week1 report}}}
 
 %https://www.isc.meiji.ac.jp/~mizutani/tex/link_slide/hyperlink.html
 %\author{Name: Rintaro Sato \and Student ID: 202120597}
 \author{Rintaro Sato \\ ID: 202120597}
 \date{\today}
-
-%\centerline{\huge\bf{Experimental Design in CS}}
-%\centerline{\large{Name: Rintaro Sato}}
-%http://www.latex-cmd.com/struct/title.html
-
 %\break
 %\newline
 
 \begin{document}
-
-\maketitle
 %output title
+\maketitle
+
 
 %\chapter{Choose a scientific question to answer}
 %\part{Choose a scientific question to answer}
-
 %\section{Choose a scientific question to answer}
 %\subsection{the objective of the experiment}
 \centerline{GitHub repo is available at}
@@ -35,6 +34,7 @@
 
 \noindent
 \parindent = 0pt
+
 \section{Objective}
 My research interest is Computer Vision and Image Processing, so I use C++ as a one of the my main language. Also, I work on the research in the field where Machine Learning is applied to Computer Vision so Python is also the language I often use for coding.\\
 
@@ -62,7 +62,7 @@ OpenCV is a popular library for Computer Vision. I executed the exact same progr
 \subsection{Precaution}
 I exactly implemented the same program and the same algorithm order in both languages. I make sure outputs and return values of functions do not differ between Python and C++ programs.\\
 
-In order to get precise execution time, I used the command \href{https://en.wikipedia.org/wiki/Time_(Unix)}{\underline{\bf{time}}} to time a program's execution. Python and C++ has its own module to time running program but I applied the same method to time for fairness. This \href{https://linuxize.com/post/linux-time-command/}{\underline{\bf{time}}} command has 2 types, shell built-in command and GNU command. I used former type, zsh built-in command. I modified the environmental variable \href{https://unix.stackexchange.com/questions/453338/how-to-get-execution-millisecond-time-of-a-command-in-zsh}{\underline{TIMEFMT}} to change the output format. Time command outputs 3 values on the terminal, {\it real}, {\it sys}  and {\it usr} under my environment. These values are defined by the following equation. 
+In order to get precise execution time, I used the command \href{https://en.wikipedia.org/wiki/Time_(Unix)}{\underline{time}} to time a program's execution. Python and C++ has its own module to time running program but I applied the same method to time for fairness. This \href{https://linuxize.com/post/linux-time-command/}{\underline{time}} command has 2 types, shell built-in command and GNU command. I used former type, zsh built-in command. I modified the environmental variable \href{https://unix.stackexchange.com/questions/453338/how-to-get-execution-millisecond-time-of-a-command-in-zsh}{\underline{TIMEFMT}} to change the output format. Time command outputs 3 values on the terminal, {\it real}, {\it sys}  and {\it usr} under my environment. These values are expressed by the following equation. 
 
 \begin{equation}
 real = sys + usr + \href{https://haydenjames.io/what-is-iowait-and-linux-performance/}{\underline{I/Owait}}
@@ -95,16 +95,25 @@ I run the program using \href{https://github.com/Rintarooo/time_cpp_python/blob/
 
 I wrote down the \href{https://github.com/Rintarooo/time_cpp_python/blob/master/rmarkdown/ds.Rmd}{\underline{R Markdown file}} . I did Confidence interval estimate. Python is distributed in a wide range around the average, while C++ is distributed in a very little range. This result indicates that C++ runs more stably and faster. 
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[clip, width=200mm]{00002d.png}
-\caption{Fibo}
-\end{figure}
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[clip, width=200mm]{00002d.png}
+%\caption{Run time in Fibonacci sequence}
+%\end{figure}
+%
+%\begin{figure}[htbp]
+%\centering
+%\includegraphics[clip, width=200mm]{000017.png}
+%\caption{Run time in SVM}
+%\end{figure}
 
+%https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11100271691
 \begin{figure}[htbp]
-\centering
-\includegraphics[clip, width=200mm]{000017.png}
-\caption{Fibo}
+\begin{center}
+\includegraphics[clip, width=180mm]{00002d.png}
+\includegraphics[clip, width=180mm]{000017.png}
+\end{center}
+\caption{Comparing Run time}
 \end{figure}
 
 \section{Conclusion}
@@ -113,4 +122,3 @@ There are many kinds of algorithm. It is almost impossible every single algorith
 \subsection{discussion}
 C++ is much faster as I expected. My hypothesis is C++ runs 5 times faster than running in Python. Based on my gathered data and data analysis, C++ runs more than 5 times faster. I need to dig into more wide range of algorithm in the next assignment or propose new hypothesis.
 \end{document}
-%\par ß
